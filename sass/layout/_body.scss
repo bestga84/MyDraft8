@@ -1,0 +1,30 @@
+// Пример № 1
+// body {
+//     background-color: lawngreen;
+// }
+
+
+// @media (min-width: 800px) {
+//     body {
+//         background-color: orange;
+//     }
+
+//     p {
+
+//     }   
+    
+//     a {
+
+//     }
+// }
+
+
+
+// Пример № 2
+body {
+    background-color: lawngreen;
+
+    @media (min-width: 800px) {
+        background-color: orange;
+    }
+}

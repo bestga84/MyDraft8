@@ -1,0 +1,26 @@
+
+.comtainer {
+    // Отзывчивая вёрстка
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Адаптивная вёрстка
+    // Смартфон
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    // Адаптивная вёрстка
+    // Планшет
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    // Адаптивная вёрстка
+    // Десктоп
+    @media screen and (min-width: 1140px) {
+        width: 1140px;
+    }
+}
