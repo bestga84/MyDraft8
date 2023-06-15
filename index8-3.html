@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывчивые изображения</title>
+    <link rel="stylesheet" href="./css/main8-3.css">
+</head>
+<body>
+
+    <!-- Пример № 1 -->
+    <h1>Пример № 1</h1>
+
+    <div class="thumb">
+        <img src="./img/img2x.jpg" alt="Планшет" class="img1">
+    </div>
+
+
+    <!-- Пример № 2 -->
+    <!-- Отзывчивый элемент img -->
+    <h1>Пример № 2. Отзывчивый элемент img</h1>
+
+    <div class="thumb">
+        <img 
+            srcset="./img/img.jpg 1x, ./img/img2x.jpg 2x" 
+            src="./img/img.jpg" 
+            alt="Планшет" 
+            width="450" 
+            class="img1">
+    </div>
+
+
+    <!-- Пример № 3, 4 -->
+    <!-- Отзывчивое изображение -->
+    <h1>Пример № 3, 4. Отзывчивое изображение
+        (Отзывчивая галерея)
+    </h1>
+
+    <div class="container">
+        <ul class="img-set">
+            <li class="img-set__item">
+                <img 
+                    loading="lazy"
+                    srcset="./img/img.jpg 450w, 
+                            ./img/img2x.jpg 900w,
+                            ./img/img3x.jpg 1350w,
+                            ./img/img4x.jpg 1800w" 
+                    src="./img/img.jpg" 
+                    alt="Планшет"  
+                    class="img1"
+                    sizes="(min-width: 1440px) 15vw,(min-width: 800px) 25vw, (min-width: 500px) 50vw, 100vw"
+                    >
+                    <!-- loading="lazy" это ленивая загрузка картинки. Она загрузится тогда, когда интернет будет хороший -->
+                    <!-- sizes="100vw" -->
+            </li>
+            <li class="img-set__item">
+                <img 
+                    loading="lazy"
+                    srcset="./img/img.jpg 450w, 
+                            ./img/img2x.jpg 900w,
+                            ./img/img3x.jpg 1350w,
+                            ./img/img4x.jpg 1800w" 
+                    src="./img/img.jpg" 
+                    alt="Планшет"  
+                    class="img1"
+                    sizes="(min-width: 1440px) 15vw,(min-width: 800px) 25vw, (min-width: 500px) 50vw, 100vw"
+                    >
+            </li>
+            <li class="img-set__item">
+                <img 
+                    loading="lazy"
+                    srcset="./img/img.jpg 450w, 
+                            ./img/img2x.jpg 900w,
+                            ./img/img3x.jpg 1350w,
+                            ./img/img4x.jpg 1800w" 
+                    src="./img/img.jpg" 
+                    alt="Планшет"  
+                    class="img1"
+                    sizes="(min-width: 1440px) 15vw,(min-width: 800px) 25vw, (min-width: 500px) 50vw, 100vw"
+                    >
+            </li>
+            <li class="img-set__item">
+                <img 
+                    loading="lazy"
+                    srcset="./img/img.jpg 450w, 
+                            ./img/img2x.jpg 900w,
+                            ./img/img3x.jpg 1350w,
+                            ./img/img4x.jpg 1800w" 
+                    src="./img/img.jpg" 
+                    alt="Планшет"  
+                    class="img1"
+                    sizes="(min-width: 1440px) 15vw,(min-width: 800px) 25vw, (min-width: 500px) 50vw, 100vw"
+                    >
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
